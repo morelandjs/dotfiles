@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cd ..
+for src in $(ls -hd dotfiles/_*); do
+  tgt=${src/_/.}
+  echo "creating dotfile symlink $tgt"
+  ln -s $src $(pwd)/$(basename $tgt)
+done;

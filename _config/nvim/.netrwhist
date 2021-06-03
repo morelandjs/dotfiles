@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/Users/morelandjs/Hacking/elora/src/elora'
+let g:netrw_dirhist_6='/Users/morelandjs/Hacking/elora/src'
+let g:netrw_dirhist_5='/Users/morelandjs/Hacking/elora/src/elora'
+let g:netrw_dirhist_4='/Users/morelandjs/Hacking/elora/src/elora.egg-info'
+let g:netrw_dirhist_3='/Users/morelandjs/Hacking/elora/src/elora'
+let g:netrw_dirhist_2='/Users/morelandjs/Hacking/elora/src/elora.egg-info'
+let g:netrw_dirhist_1='/Users/morelandjs/Hacking/nflmodel/nflmodel/data'
+let g:netrw_dirhist_0='/Applications/World of Warcraft/_classic_/Interface/Addons/Kui_Nameplates_Core'
+let g:netrw_dirhist_9='/Applications/World of Warcraft/_classic_/Interface/Addons/Bagnon_VoidStorage'
+let g:netrw_dirhist_8='/Applications/World of Warcraft/_classic_/Interface/Addons/Prat-3.0_Libraries'
