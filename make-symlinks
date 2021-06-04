@@ -1,7 +1,9 @@
 #!/bin/bash
 
+cwd=$(basename "$PWD")
+
 cd ..
-for src in $(ls -hd dotfiles/_*); do
+for src in $(ls -hd $cwd/_*); do
   tgt=${src/_/.}
   echo "creating dotfile symlink $tgt"
   ln -s $src $(pwd)/$(basename $tgt)

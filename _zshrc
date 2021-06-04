@@ -2,6 +2,15 @@
 # ~/.zshrc
 #
 
+# Determine if machine is MacOS or Linux
+# Output is stored in the "machine" variable
+uname="$(uname -s)"
+case "${uname}" in
+  Linux*)	machine=Linux;;
+  Darwin*)	machine=Mac;;
+  *)		machine=Unknown;;
+esac
+
 # ls colors
 eval $(gdircolors ~/.dircolors)
 
@@ -106,8 +115,7 @@ RPROMPT='$(_git_prompt)'
 
 # aliases
 
-# customized commands
-alias ls="gls --color=auto --group-directories-first"
+# general
 alias ps="ps -e"
 alias grep="grep --color=auto"
 alias locate="locate -i"
@@ -115,6 +123,11 @@ alias df="df -h"
 alias di="di -I ext4,btrfs -f SMbuvpt -H -t"
 alias killall="killall -v"
 alias pgrep="pgrep -a"
+
+# mac specific (may require additional dependencies)
+if [[ $machine == "Mac" ]]; then
+  alias ls="gls --color=auto --group-directories-first"
+fi
 
 # single letter commands
 alias c="clear"
