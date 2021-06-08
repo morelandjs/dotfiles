@@ -12,7 +12,12 @@ case "${uname}" in
 esac
 
 # ls colors
-eval $(gdircolors ~/.dircolors)
+if [[ $machine == "Mac" ]]
+then
+  eval $(gdircolors ~/.dircolors)
+else
+  eval $(dircolors ~/.dircolors)
+fi
 
 # environment variales
 export PATH=~/.local/bin:$PATH
