@@ -132,6 +132,8 @@ alias pgrep="pgrep -a"
 # mac specific (may require additional dependencies)
 if [[ $machine == "Mac" ]]; then
   alias ls="gls --color=auto --group-directories-first"
+else
+  alias ls="ls --color=auto --group-directories-first"
 fi
 
 # single letter commands
